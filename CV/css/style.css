@@ -375,3 +375,22 @@ footer {
 .back-to-top:hover::before {
     left: 100%;
 }
+@media (max-width: 575px) {
+    table { display: none; }
+    ul.languages { display: block; }
+    .language-item:nth-child(odd) { background-color: rgba(59, 59, 89, 0.5); }
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+    .profile-photo { width: 120px; height: 120px; }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
+}
+
+@media (min-width: 992px) {
+    body { padding: 40px; font-size: 1.05rem; }
+    header { margin-bottom: 50px; }
+    .profile-photo { width: 180px; height: 180px; box-shadow: 0 8px 30px rgba(0,0,0,0.2); }
+    h1 { font-size: 3rem; }
+    h2 { font-size: 1.8rem; }
+}
