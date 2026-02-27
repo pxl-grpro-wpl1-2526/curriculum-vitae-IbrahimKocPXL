@@ -22,7 +22,21 @@ body::before, body::after {
     z-index: -1;
 }
 
+body::before {
+    background: linear-gradient(135deg, #131324 0%, #10152e 50%, #0a1d3e 100%);
+    z-index: -2;
+}
 
+body::after {
+    background: 
+        radial-gradient(circle at 20% 30%, rgba(255, 170, 0, 0.2) 0%, transparent 25%),
+        radial-gradient(circle at 80% 20%, rgba(187, 134, 252, 0.2) 0%, transparent 25%),
+        radial-gradient(circle at 30% 70%, rgba(3, 218, 198, 0.2) 0%, transparent 25%),
+        radial-gradient(circle at 70% 80%, rgba(255, 82, 82, 0.2) 0%, transparent 25%);
+    opacity: 0.8;
+    filter: blur(40px);
+    animation: floatBubbles 20s ease-in-out infinite;
+}
 
 @keyframes floatBubbles {
     0%, 100% { transform: translate(0, 0); }
